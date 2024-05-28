@@ -16,3 +16,5 @@ docs/
 
 lib/*
 !lib/README.md
+
+node_modules/
