@@ -10,11 +10,20 @@ contract MyNFT is ERC721{
 
 
     function mint() public payable {
+
         // mint a new NFT for $10 USD
         require(msg.value == 1 ether, "You must pay $10 to mint a new NFT");
 
         // mint the NFT
         _mint(msg.sender, 1);
+    }
+
+    function fetchPrices() public view returns (uint256) {
+        // Fetch prices from Pyth.
+    }
+
+    function fetchEntropyRandomNumber() external payable {
+        // Fetch entropy random number from Pyth.
     }
 }
  
